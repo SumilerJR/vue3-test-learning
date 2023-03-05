@@ -154,6 +154,12 @@ npm run dev
 - 存在问题：
     - 新增属性、删除属性, 界面不会更新。
     - 直接通过下标修改数组, 界面不会自动更新。
+    
+- 解决方法：
+
+    - 对象：this.$set/delete、Vue.set/delete
+    - 数组：this.$set/delete、Vue.set/delete、Array.splice()
+
 
 ### Vue3.0的响应式
 
@@ -684,7 +690,6 @@ npm run dev
   > 过滤器虽然这看起来很方便，但它需要一个自定义语法，打破大括号内表达式是 “只是 JavaScript” 的假设，这不仅有学习成本，而且有实现成本！建议用方法调用或计算属性去替换过滤器。
 
 - ......
-
 
 
 
