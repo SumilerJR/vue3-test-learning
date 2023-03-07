@@ -14,7 +14,7 @@
 </template>
 
 <script>
-	import { reactive, ref, watch, watchEffect } from "vue";
+	import { reactive, ref, watch } from "vue";
 	export default {
 		name: "App",
 		watch: {
@@ -43,23 +43,13 @@
 				},
 			});
 
-			//watchEffect所指定的回调中用到的数据只要发生变化，则直接重新执行回调。
-			watchEffect(() => {
-				const x1 = sum.value;
-				const x2 = person.value.age;
-				console.log("watchEffect配置的回调执行了");
+			watch(sum, (newValue, oldValue) => {
+				console.log("sum的值变化了", newValue, oldValue);
 			});
 
-			// 监视
-			// watch(
-			// 	sum,
-			// 	(newValue, oldValue) => {
-			// 		console.log("sum的值变化了", newValue, oldValue);
-			// 	},
-			// 	{
-			// 		immediate: true,
-			// 	}
-			// );
+			watch(person.value, (newValue, oldValue) => {
+				console.log("person的值变化了", newValue, oldValue);
+			});
 
 			//返回一个对象（常用）
 			return {

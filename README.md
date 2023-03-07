@@ -79,7 +79,15 @@ vite官网：https://vitejs.cn
    - 真正的按需编译，不再等待整个应用编译完成。
 - 传统构建 与 vite构建对比图
 
-<img src="https://cn.vitejs.dev/assets/bundler.37740380.png" style="width:500px;height:280px;float:left" /><img src="https://cn.vitejs.dev/assets/esm.3070012d.png" style="width:480px;height:280px" />
+传统构建模式，是将所有资源都打包好，再上线
+
+![img](./assets/af5f8d4493f3423087d6b9e6c5e60fa1tplv-k3u1fbpfcp-zoom-in-crop-mark3024000.webp)
+
+而Vite是按需加载
+
+![img](./assets/c57d4d695fe64014b78610ff2a5cd2b6tplv-k3u1fbpfcp-zoom-in-crop-mark3024000.webp)
+
+
 
 ```bash
 ## 创建工程
