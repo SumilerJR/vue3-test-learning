@@ -323,41 +323,11 @@ npm run dev
   ```
 ## 8.生命周期
 
-<div style="border:1px solid black;width:380px;float:left;margin-right:20px;"><strong>vue2.x的生命周期</strong><img src="https://cn.vuejs.org/images/lifecycle.png" alt="lifecycle_2" style="zoom:33%;width:1200px" /></div><div style="border:1px solid black;width:510px;height:985px;float:left"><strong>vue3.0的生命周期</strong><img src="https://v3.cn.vuejs.org/images/lifecycle.svg" alt="lifecycle_2" style="zoom:33%;width:2500px" /></div>
+| Vue2                                                         | Vue3                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| ![img](./assets/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55m95qGD5ZGz56ig6bG854On,size_20,color_FFFFFF,t_70,g_se,x_16.png) | ![img](./assets/91f2362a720e435b19afbe3ccd23ef51.jpeg) |
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
 
 - Vue3.0中可以继续使用Vue2.x中的生命周期钩子，但有有两个被更名：
     - ```beforeDestroy```改名为 ```beforeUnmount```
